@@ -8,6 +8,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .title-main {
@@ -15,20 +17,29 @@ header {
   justify-content: center;
   align-items: center;
 }
-.hamburguer, 
+.hamburguer,
 img {
   width: 64px;
   height: 44px;
 }
 
-.help-button {
+.help {
   background-color: #4ca29e;
-  color: #fff;
-  border-radius: 20px;
   width: 80px;
   height: 40px;
-  font-size: 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+}
+
+.help-button {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
   border: 0;
+  text-decoration: none;
 }
 
 .image-logo {
@@ -37,7 +48,7 @@ img {
 }
 
 .search-container {
-    width: 100%;
+  width: 100%;
 }
 .search-bar {
   display: flex;
@@ -115,4 +126,15 @@ img {
   align-items: center;
   margin: 0 10px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .image-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .search-bar {
+    margin: 0px 15px;
+  }
 }
