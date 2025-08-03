@@ -3,6 +3,12 @@ html {
   color: #fff;
 }
 
+body {
+  /* overflow: hidden; */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -128,6 +134,22 @@ img {
   cursor: pointer;
 }
 
+.background-box-1 {
+  height: 280px;
+  width: 260px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.background-box-2 {
+  height: 280px;
+  width: 260px;
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+}
+
 @media (max-width: 768px) {
   .image-logo {
     width: 100%;
@@ -136,5 +158,28 @@ img {
 
   .search-bar {
     margin: 0px 15px;
+  }
+
+  .background-box-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .background-box-1 {
+    width: 200px;
+    height: 200px;
+    left: 0;
+    bottom: 0;
+    /* object-fit: cover; */
+    position: absolute;
+  }
+
+  .background-box-2 {
+    height: 180px;
+    width: 170px;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
   }
 }
